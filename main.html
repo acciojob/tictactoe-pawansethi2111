@@ -9,6 +9,7 @@
 	body{
 		margin:0px;
 		padding:0px;
+		box-sizing:border-box;
 	}
 	.container{		
 		text-align:center;				
@@ -28,18 +29,35 @@
 		height:100px
 	}
 	.game1{
-		display:flex;
+		display:flex;		
 	}
 	.game{
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+	}
+	.ticblock{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
 		
+	}
+	.parentgame{
+		display:flex;
+		text-align:center;
+		justify-content:center;
+		align-items:center;
 	}
 </style>
 <body>
 	<div class = "container">
 		<h1>Tic Tac Toe</h1>
-	<div>Player 1 <input id= "player-1" type ="text" placeholder ="enter name"></div>
-	<div>Player 2 <input id ="player-2" type ="text" placeholder = "enter name"></div>
+		<div class = "ininbut">
+		<div>Player 1 <input id= "player-1" type ="text" placeholder ="enter name"></div>
+		<div>Player 2 <input id ="player-2" type ="text" placeholder = "enter name"></div>
 		<button type ="submit" id="submit">Start Game</button>
+		</div>
 		<div class = "boardpage">
 			
 			<div class ="message">
@@ -47,6 +65,7 @@
 			</div>
 						
 		</div>
+		<div class = "parentgame">
 		<div class = "game">
 			<div class ="game1">
 			<div class ="ticblock" id = "1">1
@@ -73,9 +92,11 @@
 			</div>
 			</div>
 		</div>
+		</div>
 	</div>	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
+		
 </script>
 
 </body>
