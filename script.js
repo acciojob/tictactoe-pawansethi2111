@@ -36,4 +36,12 @@ else{
 
 // function checkWinner(){
 // 	if()
-// }
+//if(arr[0] == arr[1] && arr[1] == arr[])
+
+
+
+
+
+
+
+
